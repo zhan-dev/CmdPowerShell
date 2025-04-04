@@ -85,17 +85,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\File Download.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\File Download1.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\File Download2.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\File Download3.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

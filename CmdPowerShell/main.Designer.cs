@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.history_lbl = new System.Windows.Forms.Label();
             this.pwShell_btn = new System.Windows.Forms.Button();
             this.pwShell_txt = new System.Windows.Forms.TextBox();
@@ -35,6 +36,7 @@
             this.cmd_txt = new System.Windows.Forms.TextBox();
             this.result_txt = new System.Windows.Forms.TextBox();
             this.historyDownload_btn = new System.Windows.Forms.Button();
+            this.resultDownload_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // history_lbl
@@ -66,6 +68,7 @@
             this.pwShell_txt.Name = "pwShell_txt";
             this.pwShell_txt.Size = new System.Drawing.Size(278, 26);
             this.pwShell_txt.TabIndex = 7;
+            this.pwShell_txt.Text = "get-appxpackage | ft name";
             this.pwShell_txt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pwShell_txt_KeyDown);
             this.pwShell_txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pwShell_txt_KeyUp);
             // 
@@ -87,6 +90,7 @@
             this.cmd_txt.Name = "cmd_txt";
             this.cmd_txt.Size = new System.Drawing.Size(278, 26);
             this.cmd_txt.TabIndex = 5;
+            this.cmd_txt.Text = "ipconfig";
             this.cmd_txt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmd_txt_KeyDown);
             this.cmd_txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmd_txt_KeyUp);
             // 
@@ -110,7 +114,15 @@
             this.historyDownload_btn.Size = new System.Drawing.Size(25, 25);
             this.historyDownload_btn.TabIndex = 11;
             this.historyDownload_btn.UseVisualStyleBackColor = true;
-            this.historyDownload_btn.Click += new System.EventHandler(this.historyDownload_btn_Click);
+            // 
+            // resultDownload_btn
+            // 
+            this.resultDownload_btn.Image = ((System.Drawing.Image)(resources.GetObject("resultDownload_btn.Image")));
+            this.resultDownload_btn.Location = new System.Drawing.Point(424, 12);
+            this.resultDownload_btn.Name = "resultDownload_btn";
+            this.resultDownload_btn.Size = new System.Drawing.Size(25, 25);
+            this.resultDownload_btn.TabIndex = 12;
+            this.resultDownload_btn.UseVisualStyleBackColor = true;
             // 
             // main
             // 
@@ -118,6 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(864, 281);
+            this.Controls.Add(this.resultDownload_btn);
             this.Controls.Add(this.historyDownload_btn);
             this.Controls.Add(this.result_txt);
             this.Controls.Add(this.pwShell_btn);
@@ -146,6 +159,7 @@
         private System.Windows.Forms.TextBox cmd_txt;
         private System.Windows.Forms.TextBox result_txt;
         private System.Windows.Forms.Button historyDownload_btn;
+        private System.Windows.Forms.Button resultDownload_btn;
     }
 }
 
